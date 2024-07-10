@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D PC Setup</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-box position="0 -0.6 -3" width="4" height="0.1" depth="2" color="brown"></a-box>
+
+    
+    <a-box position="0 0 -3" width="1.5" height="0.9" depth="0.1" color="black"></a-box>
+    <a-plane position="0 0 -2.95" width="1.4" height="0.8" color="grey"></a-plane>
+    <a-entity position="0 0 -2.9">
+    <a-text value="Monitor" align="center" color="white" scale="1 1 1"></a-text>
+    </a-entity>
+
+    
+    <a-box position="-0.5 -0.5 -2.55" width="0.8" height="0.05" depth="0.3" color="grey"></a-box>
+    
+    <a-entity position="-0.5 -0.3 -2.55">
+      <a-text value="Keyboard" align="center" color="white" scale="0.6 0.6 0.6"></a-text>
+    </a-entity>
+
+    
+    <a-sphere position="0.5 -0.5 -2.55" radius="0.1" color="white"></a-sphere>
+    
+    <a-entity position="0.5 -0.3 -2.55">
+      <a-text value="Mouse" align="center" color="white" scale="0.6 0.6 0.6"></a-text>
+    </a-entity>
+
+
+    
+    <a-light type="ambient" color="#FFF"></a-light>
+    <a-light type="point" intensity="2" position="2 4 4"></a-light>
+
+    
+    <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+  </a-scene>
+</body>
+</html>
